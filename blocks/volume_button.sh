@@ -1,5 +1,9 @@
 #!/bin/sh
 case $1 in
-    1) pactl set-sink-mute @DEFAULT_SINK@ toggle ;;
-    3) pactl set-sink-volume @DEFAULT_SINK@ 50% ;;
+    1) amixer sset 'Master' 5%- ;;
+    2) amixer -D pulse set Master 1+ toggle ;;
+    3) amixer sset 'Master' 5%+ ;;
 esac
+
+# signal dwm block 1 (isg_volume) to update
+sigdwmblocks 1
