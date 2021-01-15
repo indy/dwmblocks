@@ -33,8 +33,8 @@
 static Block blocks[] = {
 /*      pathu                           pathc                           interval        signal */
         { PATH("isg_volume.sh"),        PATH("isg_volume_button.sh"),      0,              1},
-        { PATH("calendar.sh"),          NULL,                             30,              2},
-        //        { PATH("battery.sh"),           PATH("battery_button.sh"),      30,             3},
+        { PATH("battery.sh"),           PATH("battery_button.sh"),        30,              2},
+        { PATH("calendar.sh"),          NULL,                             30,              3},
         { NULL } /* just to mark the end of the array */
 };
 
