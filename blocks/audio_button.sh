@@ -5,5 +5,5 @@ case $1 in
     3) amixer sset 'Master' 5%+ ;;
 esac
 
-# signal dwm block 1 (isg_volume) to update
+# signal dwm block 1 (audio) to update
 sigdwmblocks 1
