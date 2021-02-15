@@ -35,6 +35,7 @@ static Block blocks[] = {
         { PATH("audio.sh"),             PATH("audio_button.sh"),           0,              1},
         { PATH("battery.sh"),           PATH("battery_button.sh"),        60,              2},
         { PATH("diskfree.sh"),          NULL,                             60,              0},
+        { PATH("cpuload.sh"),           NULL,                             10,              0},
         { PATH("datetime.sh"),          NULL,                             60,              3},
         { NULL } /* just to mark the end of the array */
 };
