@@ -6,6 +6,6 @@ diskspace() {
 
 case $HOSTNAME in
   (theseus) diskspace ^/dev/sdc2;;
-  (dellboy) echo "Oops, bar? Are you kidding?";;
+  (dellboy) diskspace ^/dev/nvme0n1p3;;
   (*)   printf "unknown hostname for diskfree.sh";;
 esac
